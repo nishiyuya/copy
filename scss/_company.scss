@@ -1,0 +1,96 @@
+// header
+.header{
+    &_company{
+        background: $main_color;
+        &_title{
+            color: $sab_color;
+        }
+        &_link{
+            color: $sab_color;
+        }
+    }
+}
+
+// fv
+.fv{
+    &_company{
+        height: 15vh;
+        padding: 120px 0;
+        &_title{
+            padding: 40px 0;
+            text-align: center;
+            width: 450px;
+            margin: auto;
+            background: rgba(255, 255, 255, .8);
+            font-size: $copy_fs;
+            font-weight: bold;
+            border: $sab_color 1px solid;
+        }
+    }
+}
+
+// access
+.access{
+    &_company{
+        background: rgb(200, 200, 200);
+    }
+}
+
+// details
+.details{
+    @include box;
+    width: 50%;
+    margin: 80px auto;
+    &_box{
+        &_name + &_name{
+            margin-top: 10px;
+        }
+        &_name{
+            background: rgb(230, 230, 230);
+            font-size: $title_fs;
+            font-weight: bold;
+            width: 300px;
+            height: 40px;
+            padding: 20px 0 20px 20px;
+        }
+    }
+    &_bloc{
+        &_name + &_name{
+            margin-top: 10px;
+        }
+        &_name{
+            font-size: $title_fs;
+            width: 300px;
+            height: 40px;
+            padding: 20px 0 20px 20px;
+        }
+    }
+}
+
+// common
+.common{
+    width: 50%;
+    margin: auto;
+    &_text{
+        text-align: center;
+    }
+    &_logo{
+        width: 150px;
+    }
+    &_nav{
+        margin: 50px 0;
+        &_ul{
+            @include flex;
+        }
+    }
+}
+
+// footer
+.footer{
+    &_company{
+        background: $main_color;
+        &_copy{
+            color: $sab_color;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.footer{
+    background: $sab_color;
+    &_copy{
+        padding: 20px 0;
+        margin: auto;
+        font-size: $text_fs;
+        color: $main_color;
+        text-align: center;
+    }
+}

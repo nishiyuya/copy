@@ -1,0 +1,183 @@
+// news
+.news{
+    width: 60%;
+    margin: 50px auto;
+    &_box{
+        @include flex;
+        &_title{
+            font-size: $copy_fs;
+            font-weight: bold;
+        }
+        &_ul{
+            &_li + &_li{
+                margin-top: 10px
+            }
+            &_li{
+                @include box;
+                &_time{
+                    font-size: $text_fs;
+                    margin-right: 10px;
+                }
+                &_text{
+                    font-size: $text_fs;
+                }
+            }
+        }
+    }
+}
+
+// interview
+.interview{
+    background: url(../img/interview.jpg) center / cover;
+    width: 100%;
+    height: 43vh;
+    padding: 2% 0;
+    &_box{
+        display: block;
+        background: rgba(255,255,255,.9);
+        width: 30%;
+        margin: auto;
+        padding: 50px 80px;
+        text-align: center;
+        border: 1px solid rgb(0, 0, 0);
+        &_title{
+            font-size: $copy_fs;
+            font-weight: bold;
+            text-align: center;
+        }
+        &_text{
+            font-size: $title_fs;
+            margin-top: 50px;
+        }
+        &_btn{
+            font-size: $title_fs;
+            font-weight: bold;
+            background: rgb(255,255,255);
+            border: 1px solid rgb(72, 209, 204);
+            margin: 50px auto 0 auto;
+            padding: 10px 20px;
+            width: 120px;
+        }
+    }
+}
+
+// company
+.company{
+    width: 60%;
+    margin: 100px auto;
+    &_title{
+        font-size: $copy_fs;
+        font-weight: bold;
+        text-align: center;
+    }
+    &_box{
+        @include flex;
+        &_business{
+            margin-top: 80px;
+            padding: 30px 20px;
+            background: $bg_color;
+            width: 300px;
+            height: 360px;
+            text-align: center;
+            border-radius: 3%;
+            box-shadow: 1px 5px 8px 1px $sab_color;
+            &_img{
+                width: 100px;
+            }
+            &_title{
+                font-size: $title_fs;
+                margin-top: 20px;
+                font-weight: bold;
+            }
+            &_text{
+                font-size: $text_fs;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// recruit
+.recruitment{
+    @include flex;
+    &_box{
+        background: url(../img/company.jpg)center / cover;
+        width: 100%;
+        height: 400px;
+        position: relative;
+        &_title{
+            font-size: $copy_fs;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        &_btn{
+            font-size: $text_fs;
+            background: $main_color;
+            font-weight: bold;
+            width: 100px;
+            padding: 10px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+    &_box2{
+        background: url(../img/recruit.jpg)center / cover;
+        width: 100%;
+        height: 400px;
+        position: relative;
+        &_title{
+            font-size: $copy_fs;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        &_btn{
+            font-size: $text_fs;
+            background: $main_color;
+            font-weight: bold;
+            width: 100px;
+            padding: 10px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+}
+
+// access
+.access{
+    width: 68%;
+    margin: 80px auto;
+    &_title{
+        font-size: $copy_fs;
+        font-weight: bold;
+        text-align: center;
+    }
+    &_box{
+        @include box;
+        margin-top: 50px;
+        &_address{
+            &_bloc + &_bloc{
+                margin-top: 20px
+            }
+            &_bloc{
+                @include box;
+                margin-left:120px;
+                &_overview{
+                    width: 80px;
+                    text-align: center;
+                    font-size: $text_fs;
+                    font-weight: bold;
+                }
+                &_details{
+                    font-size: $text_fs;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.fv{
+    background: url(../img/mv.jpg) center / cover;
+    width: 100%;
+    height: 94.8vh;
+    &_title{
+        font-size: $fv_fs;
+        padding-top: 20%;
+        color: rgb(255, 0, 0);
+        text-align: center;
+    }
+}
