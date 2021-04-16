@@ -1,0 +1,282 @@
+@media screen and (max-width: 1024px) {
+    .burger{
+        display: block;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        top: 10px;
+        right: 15px;
+        transition: all .3s;
+        span{
+            display: block;
+            transition: all .3s;
+            position: absolute;
+            left: 14px;
+            width: 60%;
+            height: 4px;
+            border-radius: 5%;
+            background: $main_color;
+        }
+        span:nth-of-type(1){
+            top: 10px;
+        }
+        span:nth-of-type(2){
+            top: 20px;
+        }
+        span:nth-of-type(3){
+            top: 30px;
+        }
+        span:nth-of-type(3):after{
+            content: "menu";
+            position: absolute;
+            top: 5px;
+            left: -2px;
+            color: $main_color;
+            font-size: .6rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .active{
+        .burger{
+            span:nth-of-type(1){
+                transform: translateY(6px) rotate(-45deg);
+            }
+            span:nth-of-type(2){
+                opacity: 0;
+            }
+            span:nth-of-type(3){
+                transform: translateY(-6px) rotate(45deg);
+            }
+            span:nth-of-type(3):after{
+                content: "close";
+                transform: translateY(0) rotate(-45deg);
+                top: 5px;
+                left: 4px;
+            }
+        }
+    }
+// index.html
+    .header{
+        height: 70px;
+        &_title{
+            line-height: 70px;
+        }
+        &_nav{
+            display: none;
+        }
+    }
+    
+    .fv{
+        &_title{
+            font-size: $copy_fs + 24;
+            vertical-align: middle;
+            padding: 50% 0;
+        }
+    }
+
+    .news{
+        width: 70%;
+        margin: 30px auto;
+        &_box{
+            &_ul{
+                &_li + &_li{
+                    margin-top: 5px;
+                }
+                &_li{
+                    &_time{
+                        font-size: $text_fs - 6;
+                    }
+                    &_text{
+                        font-size: $text_fs - 6;
+                    }
+                }
+            }
+        }
+    }
+
+    .interview{
+        height: 37vh;
+        &_box{
+            width: 50%;
+            &_text{
+                margin-top: 20px;
+            }
+            &_btn{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .company{
+        width: 80%;
+        margin: 30px auto;
+        &_box{
+            &_business{
+                margin-top: 30px;
+                width: 180px;
+                height: 250px;
+                &_img{
+                    width: 80px;
+                }
+                &_title{
+                    font-size: $text_fs;
+                    margin-top: 10px;
+                }
+                &_text{
+                    font-size: $text_fs - 6;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .access{
+        width: 80%;
+        margin: 30px auto;
+        &_box{
+            &_address{
+                &_bloc + &_bloc{
+                        margin-top: 5px;
+                }
+                &_bloc{
+                    margin-left: 50px;
+                    &_overview{
+                        font-size: $text_fs - 6;
+                    }
+                    &_details{
+                        font-size: $text_fs - 6;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // company
+    .details{
+        width: 60%;
+        margin: 50px auto;
+    }
+
+    .common{
+        width: 60%;
+    }
+
+    // recruitment
+    .recruit{
+        width: 80%;
+        margin: 50px auto;
+        &_box{
+            &_title{
+                width: 91%;
+            }
+            &_text{
+                margin-top: 20px;
+                line-height: 25px;
+            }
+        }
+        &_img{
+            margin-left: 20px;
+        }
+    }
+
+    .crew{
+        padding: 50px 100px;
+        &_flex + &_flex{
+            margin-top: 20px;
+        }
+        &_img{
+            width: 1200px;
+            height: 240px;
+        }
+        &_box{
+            padding: 20px;
+            &_bloc{
+                &_name{
+                    margin-left: 20px;
+                }
+            }
+            &_text{
+                margin-top: 10px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .box{
+        &_right{
+            margin-right: 20px;
+        }
+        &_left{
+            margin-left: 20px;
+        }
+    }
+
+    // interview
+    .ceo{
+        width: 80%;
+        margin: 30px auto;
+        &_img{
+            width: 1300px;
+            height: 260px;
+        }
+        &_box{
+            margin-left: 50px;
+            padding: 30px 0;
+            &_bloc{
+                margin-top: 10px;
+            }
+        }
+        &_text{
+            margin-top: 10px;
+            line-height: 20px;
+        }
+    }
+
+    .interviewpage{
+        height: 330px;
+        padding: 50px 0;
+        margin-bottom: 30px;
+        &_box{
+            padding: 30px;
+            &_bloc{
+                margin-right: 20px;
+                &_text{
+                    margin-top: 10px;
+                    line-height: 20px;
+                }
+            }
+            &_img{
+                width: 600px;
+                height: 260px;
+            }
+        }
+    }
+
+    // contact
+    .form{
+        width: 80%;
+        margin: 30px auto;
+        &_box{
+            &_name{
+                width: 30%;
+                &_contact{
+                    width: 30%;
+                }
+            }
+            &_text{
+                margin-left: 10px;
+            }
+            &_contact{
+                margin-left: 10px;
+                &_text{
+                    margin-left: 10px;
+                }
+            }
+        }
+        &_btn{
+            margin: 30px 39%;
+        }
+    }
+}

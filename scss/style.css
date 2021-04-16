@@ -12,6 +12,8 @@
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   background-color: black;
+  position: fixed;
+  width: 100%;
 }
 
 .header_title {
@@ -41,7 +43,7 @@
 .fv {
   background: url(../img/mv.jpg) center/cover;
   width: 100%;
-  height: 94.8vh;
+  height: 100vh;
 }
 
 .fv_title {
@@ -308,7 +310,7 @@
 
 .fv_company {
   height: 15vh;
-  padding: 120px 0;
+  padding: 150px 0;
 }
 
 .fv_company_title {
@@ -392,5 +394,503 @@
 
 .footer_company_copy {
   color: black;
+}
+
+.recruit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  height: 380px;
+  margin: 80px auto;
+}
+
+.recruit_box_title {
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  width: 69%;
+  line-height: 26px;
+}
+
+.recruit_box_text {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.recruit_img {
+  margin-left: 50px;
+  width: 180%;
+}
+
+.crew {
+  background: #e6e6e6;
+  padding: 80px 300px;
+  margin-bottom: 80px;
+}
+
+.crew_flex + .crew_flex {
+  margin-top: 50px;
+}
+
+.crew_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.crew_flex:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.crew_img {
+  width: 900px;
+  height: 280px;
+}
+
+.crew_box {
+  background: white;
+  padding: 40px;
+  height: 200px;
+}
+
+.crew_box_bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.crew_box_bloc_position {
+  font-size: 24px;
+}
+
+.crew_box_bloc_name {
+  font-size: 24px;
+  margin-left: 30px;
+}
+
+.crew_box_text {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.box_right {
+  margin-right: 50px;
+}
+
+.box_left {
+  margin-left: 50px;
+}
+
+.ceo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: 80px auto;
+}
+
+.ceo_img {
+  width: 1200px;
+  height: 400px;
+}
+
+.ceo_box {
+  margin-left: 150px;
+  padding: 70px 0;
+}
+
+.ceo_box_bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.ceo_box_bloc_name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ceo_box_bloc_furigana {
+  font-weight: bold;
+  line-height: 35px;
+  margin-left: 30px;
+}
+
+.ceo_text {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.interviewpage {
+  background: url(../img/interview.jpg) center/cover;
+  height: 500px;
+  margin-bottom: 80px;
+  padding: 80px 0;
+}
+
+.interviewpage_box {
+  background: rgba(255, 255, 255, 0.8);
+  width: 60%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  padding: 80px 50px;
+}
+
+.interviewpage_box_bloc {
+  margin-right: 50px;
+}
+
+.interviewpage_box_bloc_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.interviewpage_box_bloc_text {
+  margin-top: 30px;
+}
+
+.interviewpage_box_img {
+  width: 450px;
+  height: 350px;
+}
+
+.margin {
+  margin-top: 30px;
+}
+
+.form {
+  width: 60%;
+  margin: 80px auto;
+}
+
+.form_box + .form_box {
+  margin-top: 15px;
+}
+
+.form_box_name {
+  display: inline-block;
+  background: #e6e6e6;
+  font-weight: bold;
+  padding: 15px 30px 15px 25px;
+  width: 35%;
+}
+
+.form_box_name_contact {
+  vertical-align: top;
+  line-height: 30px;
+  display: inline-block;
+  background: #e6e6e6;
+  font-weight: bold;
+  width: 35%;
+  padding: 15px 30px 260px 25px;
+}
+
+.form_box_text {
+  margin-left: 20px;
+  width: 55%;
+  height: 30px;
+}
+
+.form_box_contact {
+  margin-left: 20px;
+  width: 40%;
+  height: 30px;
+}
+
+.form_box_contact_text {
+  margin-left: 20px;
+  width: 55%;
+  height: 300px;
+}
+
+.form_btn {
+  color: white;
+  background: #5050ff;
+  width: 180px;
+  padding: 3px;
+  margin: 30px 45%;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+  .burger {
+    display: block;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    right: 15px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .burger span {
+    display: block;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    position: absolute;
+    left: 14px;
+    width: 60%;
+    height: 4px;
+    border-radius: 5%;
+    background: white;
+  }
+  .burger span:nth-of-type(1) {
+    top: 10px;
+  }
+  .burger span:nth-of-type(2) {
+    top: 20px;
+  }
+  .burger span:nth-of-type(3) {
+    top: 30px;
+  }
+  .burger span:nth-of-type(3):after {
+    content: "menu";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    color: white;
+    font-size: .6rem;
+    text-transform: uppercase;
+  }
+  .active .burger span:nth-of-type(1) {
+    -webkit-transform: translateY(6px) rotate(-45deg);
+            transform: translateY(6px) rotate(-45deg);
+  }
+  .active .burger span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .active .burger span:nth-of-type(3) {
+    -webkit-transform: translateY(-6px) rotate(45deg);
+            transform: translateY(-6px) rotate(45deg);
+  }
+  .active .burger span:nth-of-type(3):after {
+    content: "close";
+    -webkit-transform: translateY(0) rotate(-45deg);
+            transform: translateY(0) rotate(-45deg);
+    top: 5px;
+    left: 4px;
+  }
+  .header {
+    height: 70px;
+  }
+  .header_title {
+    line-height: 70px;
+  }
+  .header_nav {
+    display: none;
+  }
+  .fv_title {
+    font-size: 54px;
+    vertical-align: middle;
+    padding: 50% 0;
+  }
+  .news {
+    width: 70%;
+    margin: 30px auto;
+  }
+  .news_box_ul_li + .news_box_ul_li {
+    margin-top: 5px;
+  }
+  .news_box_ul_li_time {
+    font-size: 12px;
+  }
+  .news_box_ul_li_text {
+    font-size: 12px;
+  }
+  .interview {
+    height: 37vh;
+  }
+  .interview_box {
+    width: 50%;
+  }
+  .interview_box_text {
+    margin-top: 20px;
+  }
+  .interview_box_btn {
+    margin-top: 20px;
+  }
+  .company {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .company_box_business {
+    margin-top: 30px;
+    width: 180px;
+    height: 250px;
+  }
+  .company_box_business_img {
+    width: 80px;
+  }
+  .company_box_business_title {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .company_box_business_text {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .access {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .access_box_address_bloc + .access_box_address_bloc {
+    margin-top: 5px;
+  }
+  .access_box_address_bloc {
+    margin-left: 50px;
+  }
+  .access_box_address_bloc_overview {
+    font-size: 12px;
+  }
+  .access_box_address_bloc_details {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .details {
+    width: 60%;
+    margin: 50px auto;
+  }
+  .common {
+    width: 60%;
+  }
+  .recruit {
+    width: 80%;
+    margin: 50px auto;
+  }
+  .recruit_box_title {
+    width: 91%;
+  }
+  .recruit_box_text {
+    margin-top: 20px;
+    line-height: 25px;
+  }
+  .recruit_img {
+    margin-left: 20px;
+  }
+  .crew {
+    padding: 50px 100px;
+  }
+  .crew_flex + .crew_flex {
+    margin-top: 20px;
+  }
+  .crew_img {
+    width: 1200px;
+    height: 240px;
+  }
+  .crew_box {
+    padding: 20px;
+  }
+  .crew_box_bloc_name {
+    margin-left: 20px;
+  }
+  .crew_box_text {
+    margin-top: 10px;
+    line-height: 25px;
+  }
+  .box_right {
+    margin-right: 20px;
+  }
+  .box_left {
+    margin-left: 20px;
+  }
+  .ceo {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .ceo_img {
+    width: 1300px;
+    height: 260px;
+  }
+  .ceo_box {
+    margin-left: 50px;
+    padding: 30px 0;
+  }
+  .ceo_box_bloc {
+    margin-top: 10px;
+  }
+  .ceo_text {
+    margin-top: 10px;
+    line-height: 20px;
+  }
+  .interviewpage {
+    height: 330px;
+    padding: 50px 0;
+    margin-bottom: 30px;
+  }
+  .interviewpage_box {
+    padding: 30px;
+  }
+  .interviewpage_box_bloc {
+    margin-right: 20px;
+  }
+  .interviewpage_box_bloc_text {
+    margin-top: 10px;
+    line-height: 20px;
+  }
+  .interviewpage_box_img {
+    width: 600px;
+    height: 260px;
+  }
+  .form {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .form_box_name {
+    width: 30%;
+  }
+  .form_box_name_contact {
+    width: 30%;
+  }
+  .form_box_text {
+    margin-left: 10px;
+  }
+  .form_box_contact {
+    margin-left: 10px;
+  }
+  .form_box_contact_text {
+    margin-left: 10px;
+  }
+  .form_btn {
+    margin: 30px 39%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .fv_title {
+    font-size: 42px;
+  }
+  .news {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .interview {
+    height: 31%;
+  }
+  .interview_box {
+    padding: 30px 50px;
+  }
+  .interview_box_text {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .company {
+    width: 100%;
+  }
+  .company_box_business {
+    padding: 10px;
+    width: 150px;
+    height: 290px;
+  }
+  .access {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

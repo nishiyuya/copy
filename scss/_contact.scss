@@ -1,0 +1,48 @@
+.form{
+    width: 60%;
+    margin: 80px auto;
+    &_box + &_box{
+        margin-top: 15px;
+    }
+    &_box{
+        &_name{
+            display: inline-block;
+            background: $bg_color;
+            font-weight: bold;
+            padding: 15px 30px 15px 25px;
+            width: 35%;
+            &_contact{
+                vertical-align: top;
+                line-height: 30px;
+                display: inline-block;
+                background: $bg_color;
+                font-weight: bold;
+                width: 35%;
+                padding: 15px 30px 260px 25px;
+            }
+        }
+        &_text{
+            margin-left: 20px;
+            width: 55%;
+            height: 30px;
+        }
+        &_contact{
+            margin-left: 20px;
+            width: 40%;
+            height: 30px;
+            &_text{
+                margin-left: 20px;
+                width: 55%;
+                height: 300px;
+            }
+        }
+    }
+    &_btn{
+        color: $main_color;
+        background: rgb( 80, 80, 255);
+        width: 180px;
+        padding: 3px;
+        margin: 30px 45%;
+        font-size: $text_fs;
+    }
+}

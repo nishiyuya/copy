@@ -1,0 +1,70 @@
+.recruit{
+    @include box;
+    width: 70%;
+    height: 380px;
+    margin: 80px auto;
+    &_box{
+        &_title{
+            font-size: $copy_fs;
+            font-weight: bold;
+            border-bottom: 2px solid $sab_color;
+            width: 69%;
+            line-height: 26px;
+        }
+        &_text{
+            margin-top: 30px;
+            font-size: $title_fs;
+        }
+    }
+    &_img{
+        margin-left: 50px;
+        width: 180%;
+    }
+}
+
+.crew{
+    background: $bg_color;
+    padding: 80px 300px;
+    margin-bottom: 80px;
+    &_flex + &_flex{
+        margin-top: 50px
+    }
+    &_flex{
+        @include box;
+    }
+    &_flex:nth-child( even ){
+        flex-direction: row-reverse;
+    }
+    &_img{
+        width: 900px;
+        height: 280px;
+    }
+    &_box{
+        background: $main_color;
+        padding: 40px;
+        height: 200px;
+        &_bloc{
+            @include box;
+            &_position{
+                font-size: $title_fs;
+            }
+            &_name{
+                font-size: $title_fs;
+                margin-left: 30px;
+            }
+        }
+        &_text{
+            font-size: $title_fs;
+            margin-top: 30px;
+        }
+    }
+}
+
+.box{
+    &_right{
+        margin-right: 50px;
+    }
+    &_left{
+        margin-left: 50px;
+    }
+}

@@ -1,6 +1,4 @@
 // ターゲットコンパイル
-@charset "utf-8";
-
 @import "variable";
 @import "base";
 @import "mixin/flex";
@@ -9,3 +7,8 @@
 @import "main";
 @import "footer";
 @import "company";
+@import "recruitment";
+@import "interview";
+@import "contact";
+@import "media/tablet";
+@import "media/smart";

@@ -1,6 +1,8 @@
 .header{
     @include flex;
     background-color: $sab_color;
+    position: fixed;
+    width: 100%;
     &_title{
         font-size: $copy_fs;
         color: $main_color;

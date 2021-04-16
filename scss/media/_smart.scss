@@ -1,0 +1,39 @@
+@media screen and(max-width:599px) {
+    // index.html
+    .fv{
+        &_title{
+            font-size: $copy_fs + 12;
+        }
+    }
+
+    .news{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .interview{
+        height: 31%;
+        &_box{
+            padding: 30px 50px;
+            &_text{
+                margin-top: 10px;
+                font-size: $text_fs;
+            }
+        }
+    }
+
+    .company{
+        width: 100%;
+        &_box{
+            &_business{
+                padding: 10px;
+                width: 150px;
+                height: 290px;
+            }
+        }
+    }
+
+    .access{
+        width: 100%;
+    }
+}

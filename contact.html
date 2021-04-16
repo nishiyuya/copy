@@ -5,8 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="icon" href="img/zeroplus.png">
 </head>
 <body>
-    
+    <header class="header header_company">
+        <h1 class="header_title header_company_title"><a href="index.html">HomePage inc.</a></h1>
+        <nav class="header_nav">
+            <ul class="header_ul">
+                <li class="header_link header_company_link"><a class="header_li_a" href="index.html">ホーム</a></li>
+                <li class="header_link header_company_link""><a class="header_li_a" href="index.html #news">ニュース</a></li>
+                <li class="header_link header_company_link""><a class="header_li_a" href="index.html #company">事業内容</a></li>
+                <li class="header_link header_company_link""><a class="header_li_a" href="company.html">会社概要</a></li>
+                <li class="header_link header_company_link""><a class="header_li_a" href="recruitment.html">採用情報</a></li>
+                <li class="header_link header_company_link""><a class="header_li_a" href="index.html #access">アクセス</a></li>
+                <li class="header_link header_company_link""><a class="header_li_a" href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="fv fv_company">
+        <p class="fv_company_title">お問い合わせ</p>
+    </article>
+    <main class="main">
+        <form class="form">
+            <input type="hidden" name="_to" value="niyayushi0328@gmail.com">
+            <input type="hidden" name="_from" value="">
+            <div class="form_box">
+                <label class="form_box_name" for="company">会社名</label>
+                <input class="form_box_text" type="text" name="company" placeholder="株式会社TOMAP">
+            </div>
+            <div class="form_box">
+                <label class="form_box_name" for="name">お名前</label>
+                <input class="form_box_text" type="text" name="name" placeholder="山田太郎">
+            </div>
+            <div class="form_box">
+                <label class="form_box_name" for="email">メールアドレス</label>
+                <input class="form_box_text" type=email" name="email" placeholder="example@gmail.com" inputmode="url">
+            </div>
+            <div class="form_box">
+                <label class="form_box_name" for="tel">電話番号</label>
+                <input class="form_box_text" type="tel" name="tel" placeholder="012-3456-7890">
+            </div>
+            <div class="form_box">
+                <label class="form_box_name" for="contact">お問い合わせ項目</label>
+                <select class="form_box_contact" name="contact" id="contact">
+                    <option selected>選択して下さい</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form_box">
+                <label class="form_box_name_contact" for="message">お問い合わせ内容</label>
+                <textarea class="form_box_contact_text" name="message" id="message" cols="40" rows="4" placeholder="ここに要件を記入して下さい。"></textarea>
+            </div>
+            <input class="form_btn" type="submit" value="送信する">
+        </form>
+        <section class="common">
+            <p class="common_text"><img class="common_logo" src="../lesson3_scss/img/zeroplus.png" alt="logo"></p>
+            <nav class="common_nav">
+                <ul class="common_nav_ul">
+                    <li class="common_nav_ul_li"><a href="index.html">ホーム</a></li>
+                    <li class="common_nav_ul_li"><a href="index.html #news">ニュース</a></li>
+                    <li class="common_nav_ul_li"><a href="index.html #company">事業内容</a></li>
+                    <li class="common_nav_ul_li"><a href="#">会社概要</a></li>
+                    <li class="common_nav_ul_li"><a href="recruitment.html">採用情報</a></li>
+                    <li class="common_nav_ul_li"><a href="index.html #access">アクセス</a></li>
+                    <li class="common_nav_ul_li"><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer class="footer footer_company">
+        <p class="footer_copy footer_company_copy">&copy; 2020 Tomap inc. All Rights Reserved.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
